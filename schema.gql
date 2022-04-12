@@ -1,0 +1,74 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Author {
+  _id: ID!
+  name: String!
+  books: [Book!]!
+}
+
+type Book {
+  _id: ID!
+  title: String!
+  isbn: String!
+  author: Author!
+}
+
+type Query {
+  authors: [Author!]!
+  findAuthorId(input: FindAuthorIdDto!): Author!
+  findAuthorName(input: FindAuthorNameDto!): [Author!]!
+  listAuthors(Input: ListAuthorDto!): [Author!]!
+  books: [Book!]!
+  findBookId(input: FindBookIdDto!): Book!
+  findBookName(input: FindBookNameDto!): [Book!]!
+  listBooks(Input: ListBookDto!): [Book!]!
+}
+
+input FindAuthorIdDto {
+  _id: String!
+}
+
+input FindAuthorNameDto {
+  name: String!
+}
+
+input ListAuthorDto {
+  """classical limit"""
+  limit: Float!
+
+  """classical offset"""
+  offset: Float!
+}
+
+input FindBookIdDto {
+  _id: String!
+}
+
+input FindBookNameDto {
+  title: String!
+}
+
+input ListBookDto {
+  """classical limit"""
+  limit: Float!
+
+  """classical offset"""
+  offset: Float!
+}
+
+type Mutation {
+  createAuthor(input: CreateAuthorDto!): Author!
+  createBook(input: CreateBookDto!): Book!
+}
+
+input CreateAuthorDto {
+  name: String!
+}
+
+input CreateBookDto {
+  title: String!
+  isbn: String!
+  author: String!
+}
