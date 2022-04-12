@@ -14,8 +14,8 @@ Test task of the company Vito Technology
 * http://178.20.42.150.sslip.io:3012/graphql
 
 ##### GraphQL query examples:
-* src\book\graphql-query\
-* src\author\graphql-query\
+* [src\author\graphql-query](https://github.com/illusionoff/test_vito_technology/tree/main/src/author/graphql-query)
+*  [src\book\graphql-query](https://github.com/illusionoff/test_vito_technology/tree/main/src/book/graphql-query)
 ##### I am using Insomnia app for GraphQL testing
 
 
