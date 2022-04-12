@@ -62,7 +62,7 @@ Test task of the company Vito Technology
 ### How to set up the necessary indexes in the database?
 
 ##### Indexes in the database are configured automatically when the database is initialized by clicking on the link:
-HOST:3012/init-database
+* HOST:3012/init-database
 
 
 #### Indexes are registered in:
